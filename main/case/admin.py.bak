@@ -1,0 +1,7 @@
+from django.contrib import admin
+from case.models import Content 
+
+class ContentAdmin(admin.ModelAdmin):
+	list_display = ['name','title','doctor']
+	list_filter = ['name','title','doctor']
+admin.site.register(Content,ContentAdmin)

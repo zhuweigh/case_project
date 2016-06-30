@@ -1,0 +1,18 @@
+{% extends "case/base.html" %}
+{% load i18n %}
+{% block title %} {% trans "Case List" %}  {% endblock %}
+{% block content %}
+<h1> {% trans  "Case List" %} </h1>
+{% for case in cases %}
+	{% blocktrans with body=case.description  path=case.get_absolute_url name=case.name  doctor=case.doctor %}
+	<a href="{{ path }}">{{ name }}</a>
+	<p class="date">
+	Writed {{ case.created }} by {{ doctor }}
+	</p>
+	<p>
+	{{ body |truncatewords_html:5 }}
+	</p>
+	{% endblocktrans %}
+{% endfor %}
+{% include "case/pagination.html" with page=cases %}
+{% endblock %}

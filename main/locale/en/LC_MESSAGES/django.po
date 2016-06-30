@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-30 18:20+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: django-easy-pdf/docs/_templates/layout.html:62
+msgid "About these documents"
+msgstr ""
+
+#: django-easy-pdf/docs/_templates/layout.html:66
+msgid "Index"
+msgstr ""
+
+#: django-easy-pdf/docs/_templates/layout.html:70
+msgid "Search"
+msgstr ""
+
+#: django-easy-pdf/docs/_templates/layout.html:73
+msgid "Copyright"
+msgstr ""
+
+#: main/settings.py:97
+msgid "English"
+msgstr "english"
+
+#: main/settings.py:98
+msgid "中文简体"
+msgstr "chinese simple"
+
+#: main/settings.py:99
+msgid "中文繁體"
+msgstr "chinese complex"
+
+#: main/urls.py:11
+msgid "^case/"
+msgstr ""
+
+#: main/urls.py:12
+msgid "^rosetta/"
+msgstr ""

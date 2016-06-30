@@ -1,0 +1,23 @@
+{% extends "case/base.html" %}
+{% block title %}Search{% endblock %}
+{% block content %}
+{% if "query" in query_ %}
+<h1>Posts containing "{{ cd.query }}"</h1>
+<h3>Found {{ total_results }} result{{ total_results|pluralize }}</h3>
+{% for result in results %}
+{% with case=result.object %}
+<h4><a href="{{ case.get_absolute_url }}">{{ case.name }}</a></h4>
+{{ case.description|truncatewords:5 }}
+{% endwith %}
+{% empty %}
+<p>There are no results for your query.</p>
+{% endfor %}
+<p><a href="{% url "case:case_searchs" %}">Search again</a></p>
+{% else %}
+<h1>Search for cases</h1>
+<form action="." method="get">
+{{ form.as_p }}
+<input type="submit" value="Search">
+</form>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-30 18:20+0800\n"
+"PO-Revision-Date: 2016-06-30 10:06+0000\n"
+"Last-Translator: b'  <1102293607@qq.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.7.11\n"
+
+#: case/models.py:8
+msgid "女"
+msgstr "女"
+
+#: case/models.py:9
+msgid "男"
+msgstr "男"
+
+#: case/models.py:11
+msgid "医院"
+msgstr "医院"
+
+#: case/models.py:12
+msgid "姓名"
+msgstr "姓名"
+
+#: case/models.py:15
+msgid "生日"
+msgstr "生日"
+
+#: case/models.py:16
+msgid "职业"
+msgstr "职业"
+
+#: case/models.py:17
+msgid "住址或单位"
+msgstr "住址或单位"
+
+#: case/models.py:20
+msgid "主治医师"
+msgstr "主治医师"
+
+#: case/templates/case/detail.html:4
+msgid "病例单"
+msgstr ""
+
+#: case/templates/case/detail.html:6
+#, python-format
+msgid ""
+"\n"
+"<p>\n"
+"Writed %(case.created)s by %(doctor)s\n"
+"医院: %(title)s    &nbsp   &nbsp   &nbsp  &nbsp  &nbsp  \n"
+"<br>\n"
+"<br>\n"
+"姓名: %(name)s     &nbsp   &nbsp   &nbsp  &nbsp  &nbsp   性别: %(sex)s\n"
+"<br>\n"
+"<br>\n"
+"年龄: %(age)s    &nbsp  &nbsp    &nbsp   &nbsp   &nbsp  &nbsp 工作: %(job)s\n"
+"<br>\n"
+"<br>\n"
+"住址:%(address)s  \n"
+"<br>\n"
+"<br>\n"
+"病情:%(body)s\n"
+"<br>\n"
+"<br>\n"
+"状态:%(result)s\n"
+"<br>\n"
+"<br>\n"
+"主治医师:%(doc)s \n"
+"</p>\n"
+msgstr ""
+
+#: case/templates/case/list.html:3 case/templates/case/list.html.py:5
+msgid "Case List"
+msgstr ""
+
+#: case/templates/case/list.html:7
+#, python-format
+msgid ""
+"\n"
+"\t<a href=\"%(path)s\">%(name)s</a>\n"
+"\t<p class=\"date\">\n"
+"\tWrited %(case.created)s by %(doctor)s\n"
+"\t</p>\n"
+"\t<p>\n"
+"\t%(body |truncatewords_html:5)s\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+
+#: case/urls.py:10
+msgid "^list/"
+msgstr ""
+
+#: case/urls.py:11
+msgid "^detail/(?P<case_id>\\d+)/"
+msgstr ""
+
+#: case/urls.py:12
+msgid "^search/$"
+msgstr ""
+
+#: case/urls.py:16
+msgid "^pdf/(?P<case_id>\\d+)$"
+msgstr ""

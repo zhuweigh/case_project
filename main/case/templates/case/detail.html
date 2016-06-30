@@ -1,0 +1,33 @@
+{% extends "case/d.html" %}
+{% load i18n %}
+{% block title %}{{ case.name }}{% endblock %}
+
+
+{% block content %}
+<h1>病例单</h1>
+<p class="date">
+Writed {{ case.created }} by {{ case.doctor }}
+</p>
+<p>
+{% trans "医院:" %} {{ case.title }}    &nbsp   &nbsp   &nbsp  &nbsp  &nbsp  
+<br>
+<br>
+姓名: {{ case.name }}     &nbsp   &nbsp   &nbsp  &nbsp  &nbsp   性别: {{ case.sex }}
+<br>
+<br>
+年龄: {{ case.age }}    &nbsp  &nbsp    &nbsp   &nbsp   &nbsp  &nbsp  &nbsp    工作: {{ case.job }}
+<br>
+<br>
+住址:{{ case.address }}  
+<br>
+<br>
+病情:{{  case.description }}
+<br>
+<br>
+状态:{{ case.result }}
+<br>
+<br>
+主治医师:{{ case.doctor }} 
+</p>
+<p> <a href= {{ case.get_id }}> PDF</a> </p>
+{% endblock %}
